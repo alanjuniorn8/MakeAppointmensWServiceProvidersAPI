@@ -1,3 +1,5 @@
+import AppError from '@shared/errors/AppError'
+
 import FakeAppointmentsRepository from "../repositories/fakes/FakeAppointmentsRepository"; 
 import CreateAppointmentService from "./CreateAppointmentService";
 
@@ -28,10 +30,10 @@ describe('CreateAppointment', () => {
             provider_id: '123384934832880'
         });
 
-        expect(createAppointment.execute({
+        await expect(createAppointment.execute({
             date: sameDate,
             provider_id: '123384934832880'
-        })).rejects.toBeInstanceOf(Error);
+        })).rejects.toBeInstanceOf(AppError);
 
     });
 })
