@@ -1,14 +1,30 @@
 
 import { uuid } from 'uuidv4';
-import { isEqual } from 'date-fns';
+import { isEqual, getDate, getMonth, getYear } from 'date-fns';
 
 import IAppointmentsRepository from '@modules/appointments/repositories/IAppointmentsRepository';
 import ICreateAppointmentDTO from "@modules/appointments/dtos/ICreateAppointmentDTO"
 
 import Appointment from "@modules/appointments/infra/typeorm/entities/Appointment";
+import IFindAllInMonthFromProviderDTO from '@modules/appointments/dtos/IFindAllInMonthFromProviderDTO';
+import IFindAllInDayFromProviderDTO from '@modules/appointments/dtos/IFindAllInDayFromProviderDTO';
 
 class FakeAppointmentsRepository implements IAppointmentsRepository{
     private appointments: Appointment[] = [];
+
+    public async create({ provider_id, user_id, date }: ICreateAppointmentDTO ): Promise<Appointment>{
+
+        const appointment = new Appointment();
+
+        appointment.id = uuid();
+        appointment.date = date;
+        appointment.provider_id = provider_id;
+        appointment.user_id = user_id;
+
+        this.appointments.push(appointment);
+
+        return appointment;
+    }
 
     public async findByDate(date: Date): Promise<Appointment | undefined>{
 
@@ -20,20 +36,30 @@ class FakeAppointmentsRepository implements IAppointmentsRepository{
 
     }
 
-    public async create({ provider_id, date }: ICreateAppointmentDTO ): Promise<Appointment>{
+    public async findAllInMonthFromProvider({ provider_id, year, month }: IFindAllInMonthFromProviderDTO ): Promise<Appointment[]>{
 
-        const appointment = new Appointment();
+        const appointments = this.appointments.filter( appointment =>
+            appointment.provider_id == provider_id && 
+            getMonth(appointment.date) + 1 == month &&
+            getYear(appointment.date) == year
+        );
 
-        appointment.id = uuid();
-        appointment.date = date;
-        appointment.provider_id = provider_id;
+        return appointments;
 
-        this.appointments.push(appointment);
-
-        return appointment;
     }
 
+    public async findAllInDayFromProvider({ provider_id, year, month, day }: IFindAllInDayFromProviderDTO ): Promise<Appointment[]>{
 
+        const appointments = this.appointments.filter( appointment =>
+            appointment.provider_id == provider_id &&
+            getDate(appointment.date) == day &&
+            getMonth(appointment.date) + 1 == month &&
+            getYear(appointment.date) == year
+        );
+
+        return appointments;
+
+    }
 
 }
 

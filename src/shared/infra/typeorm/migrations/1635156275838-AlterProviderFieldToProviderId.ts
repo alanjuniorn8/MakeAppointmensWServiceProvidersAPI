@@ -33,7 +33,6 @@ export class AlterProviderFieldToProviderId1635156275838 implements MigrationInt
             name: 'provider',
             type: 'varchar',    
         }));
-        
     }
 
 }
