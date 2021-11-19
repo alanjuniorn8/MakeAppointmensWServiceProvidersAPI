@@ -3,7 +3,7 @@ import { container } from "tsyringe"
 
 import ListProvidersMonthAvailabityService from '@modules/appointments/services/ListProvidersMonthAvailabilityService';
 
-export default class ProviderMonthAvailabilityControler {
+export default class ProviderMonthAvailabilityController {
     public async index(request: Request, response: Response): Promise<Response> {
 
         const { month, year } = request.body;
