@@ -14,7 +14,7 @@ And some DataBases: (you may want to use docker containers :whale: )
  [MongoDB](https://www.mongodb.com/)
  [Redis](https://redis.io/)
 
-### :runner: Runing
+### 🏃 Runing
 
 ```bash
 # Clone the reository
@@ -32,11 +32,11 @@ $ yarn test
 
 ### 🛠 Stack
 
-- white_check_mark: [Nodejs](https://nodejs.org/en/) 
-- :cat2: [Yarn](https://classic.yarnpkg.com/lang/en/)
-- :bookmark_tabs: [TypeORM] (https://typeorm.io/#/)
-- :black_joker: [jestjs] (https://jestjs.io/pt-BR/)
-- :elephant: [PostgreSQL](https://www.postgresql.org/)
-- :herb: [MongoDB](https://www.mongodb.com/)
-- :small_red_triangle: [Redis](https://redis.io/)
+- 🟢 [Nodejs](https://nodejs.org/en/) 
+- 🐈 [Yarn](https://classic.yarnpkg.com/lang/en/)
+- 📑 [TypeORM] (https://typeorm.io/#/)
+- 🃏 [jestjs] (https://jestjs.io/)
+- 🐘 [PostgreSQL](https://www.postgresql.org/)
+- 🥬 [MongoDB](https://www.mongodb.com/)
+- 🟥 [Redis](https://redis.io/)
 
