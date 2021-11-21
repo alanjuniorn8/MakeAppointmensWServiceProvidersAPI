@@ -8,11 +8,11 @@
 
 ### 🚧 Before you start, some stack will be necessary:
 
-Install [Nodejs](https://nodejs.org/en/) and [Yarn](https://classic.yarnpkg.com/lang/en/) (Classic Stable)
-And some DataBases: (you may want to use docker containers :whale: ) 
- [PostgreSQL](https://www.postgresql.org/)
- [MongoDB](https://www.mongodb.com/)
- [Redis](https://redis.io/)
+Install [Nodejs](https://nodejs.org/en/) and [Yarn](https://classic.yarnpkg.com/lang/en/) (Classic Stable) </br>
+And some DataBases: (you may want to use docker containers :whale: ) </br>
+ [PostgreSQL](https://www.postgresql.org/) </br>
+ [MongoDB](https://www.mongodb.com/) </br>
+ [Redis](https://redis.io/) </br>
 
 ### 🏃 Runing
 
