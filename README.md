@@ -32,11 +32,11 @@ $ yarn test
 
 ### 🛠 Stack
 
-- :white_check_mark: [Nodejs](https://nodejs.org/en/) 
+- :green_check_mark: [Nodejs](https://nodejs.org/en/) 
 - :cat2: [Yarn](https://classic.yarnpkg.com/lang/en/)
 - :bookmark_tabs: [TypeORM] (https://typeorm.io/#/)
 - :black_joker: [jestjs] (https://jestjs.io/pt-BR/)
 - :elephant: [PostgreSQL](https://www.postgresql.org/)
 - :herb: [MongoDB](https://www.mongodb.com/)
-- :small_red_triangle: :red_large_square:[Redis](https://redis.io/)
+- :small_red_triangle: [Redis](https://redis.io/)
 
