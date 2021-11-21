@@ -32,7 +32,7 @@ $ yarn test
 
 ### 🛠 Stack
 
-- :green_check_mark: [Nodejs](https://nodejs.org/en/) 
+- white_check_mark: [Nodejs](https://nodejs.org/en/) 
 - :cat2: [Yarn](https://classic.yarnpkg.com/lang/en/)
 - :bookmark_tabs: [TypeORM] (https://typeorm.io/#/)
 - :black_joker: [jestjs] (https://jestjs.io/pt-BR/)
