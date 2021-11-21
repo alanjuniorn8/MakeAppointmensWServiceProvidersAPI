@@ -34,8 +34,8 @@ $ yarn test
 
 - 🟢 [Nodejs](https://nodejs.org/en/) 
 - 🐈 [Yarn](https://classic.yarnpkg.com/lang/en/)
-- 📑 [TypeORM] (https://typeorm.io/#/)
-- 🃏 [jestjs] (https://jestjs.io/)
+- 📑 [TypeORM](https://typeorm.io/#/)
+- 🃏 [jestjs](https://jestjs.io/)
 - 🐘 [PostgreSQL](https://www.postgresql.org/)
 - 🥬 [MongoDB](https://www.mongodb.com/)
 - 🟥 [Redis](https://redis.io/)
