@@ -4,8 +4,8 @@ import { celebrate, Segments, Joi } from "celebrate";
 import multer from "multer";
 import uploadConfig from "@config/upload";
 
-import ProfileController from "../conrollers/ProfileController";
-import UserAvatarController from "../conrollers/UserAvatarContoller";
+import ProfileController from "../controllers/ProfileController";
+import UserAvatarController from "../controllers/UserAvatarContoller";
 
 
 import ensureAuthenticated from "../middlewares/ensureAuthenticated";

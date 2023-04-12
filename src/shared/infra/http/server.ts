@@ -1,6 +1,7 @@
 import 'reflect-metadata';
 import 'dotenv/config';
 
+import createConnections from '@shared/infra/typeorm/index'
 import express, { Request, Response, NextFunction} from 'express';
 import 'express-async-errors';
 import cors from 'cors';
@@ -15,6 +16,7 @@ import routes from '@shared/infra/http/routes';
 import '@shared/infra/typeorm';
 import '@shared/container'
 
+createConnections();
 const app = express();
 
 app.use(rateLimiter);
