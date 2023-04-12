@@ -14,7 +14,6 @@ import routes from '@shared/infra/http/routes';
 
 import '@shared/infra/typeorm';
 import '@shared/container'
-import { celebrate } from 'celebrate';
 
 const app = express();
 
